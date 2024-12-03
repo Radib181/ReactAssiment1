@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://<Radib181>.github.io/<ReactAssiment1>",
+  "homepage": "https://Radib181.github.io/ReactAssiment1",
 
   "scripts": {
   "predeploy": "npm run build",
