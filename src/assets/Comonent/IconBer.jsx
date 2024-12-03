@@ -44,7 +44,7 @@ function IconBer() {
             </div>
 
             {/* Title */}
-            <h3 className="text-xl font-medium mb-2 text-center group-hover:text-white">
+            <h3 className="text-xl font-medium mb-2 text-center text-white group-hover:text-white">
               {card.title}
             </h3>
 
