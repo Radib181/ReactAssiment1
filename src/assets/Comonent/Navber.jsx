@@ -40,7 +40,7 @@ const Navbar = () => {
           </ListItem>
         ))}
       </List>
-      <div className="flex flex-col gap-3 mt-6 px-6">
+      <div className="flex flex-col gap-3 mt-5 px-6">
         <Button
           variant="contained"
           className="bg-[#02242A] text-white py-2 rounded-lg hover:bg-blue-600"
