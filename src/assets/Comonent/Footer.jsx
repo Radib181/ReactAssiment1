@@ -12,7 +12,7 @@ const Footer = () => {
       </h1>
       <p className="text-base max-w-lg mt-4">
         Wizia lets you train, activate, and optimize aiDRs. Take your outbound
-        to new levels of performance and efficiency.
+        to new levels of performance & efficiency.
       </p>
 
       {/* Button */}
