@@ -4,8 +4,8 @@ const testimonials = [
   {
     text: "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.!",
     author: {
-      name: " John Doe",
-      title: 'John Doe Chief Strategy Officer  Company',
+      name: "John Doe",
+      title: "Chief Strategy Officer",
       company: "TechCorp",
       avatar: "https://via.placeholder.com/100",
     },
@@ -37,7 +37,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 10000); // Auto-slide every 5 seconds
+    }, 8000); // Auto-slide every 8 seconds
     return () => clearInterval(interval);
   }, [currentIndex]);
 
@@ -50,35 +50,28 @@ const Carousel = () => {
   };
 
   return (
-    <div className="container mt-20 mx-auto px-4   rounded-lg shadow-xl">
-      <div className="relative overflow-hidden rounded-lg">
+    <div className="container mt-16 mx-auto px-6 sm:px-12 lg:px-24">
+      <div className="relative bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-xl shadow-2xl overflow-hidden">
         {/* Testimonial Slides */}
         <div
           className="flex transition-transform duration-700 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="min-w-full px-4">
-              <div className=" p-8 rounded-lg shadow-lg text-center hover:scale-105 transition-transform duration-300 ease-in-out">
-                <div className="flex justify-center items-center mb-6">
-                  <div className="text-4xl text-gray-400 mx-3">
-                    <i className="fas fa-quote-left"></i>
-                  </div>
-                  <p className="text-lg text-white italic">"{testimonial.text}"</p>
-                  <div className="text-4xl text-gray-400 mx-3">
-                    <i className="fas fa-quote-right"></i>
-                  </div>
-                </div>
-
-                <div className="flex items-center justify-center mt-6">
+            <div key={index} className="min-w-full px-6 sm:px-16 py-12">
+              <div className="bg-white rounded-xl p-8 shadow-md hover:shadow-lg transition-shadow duration-300">
+                <div className="flex flex-col md:flex-row items-center text-center md:text-left">
                   <img
                     src={testimonial.author.avatar}
                     alt={testimonial.author.name}
-                    className="w-16 h-16 rounded-full shadow-md hover:shadow-xl hover:scale-110 transition-all duration-300"
+                    className="w-20 h-20 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
                   />
-                  <div className="ml-4 text-left">
-                    <p className="text-white font-semibold">{testimonial.author.name}</p>
-                    <p className="text-gray-400 text-sm">
+                  <div className="mt-6 md:mt-0 md:ml-6">
+                    <p className="text-gray-700 text-lg italic mb-4">
+                      "{testimonial.text}"
+                    </p>
+                    <p className="font-bold text-gray-900">{testimonial.author.name}</p>
+                    <p className="text-gray-500 text-sm">
                       {testimonial.author.title}, {testimonial.author.company}
                     </p>
                   </div>
@@ -91,25 +84,25 @@ const Carousel = () => {
         {/* Navigation Buttons */}
         <button
           onClick={handlePrev}
-          className="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] hover:bg-blue-500 text-white p-4 rounded-full shadow-lg transition-transform duration-300 hover:scale-110"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-100 hover:bg-gray-200 text-gray-800 p-3 rounded-full shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-110"
         >
           ❮
         </button>
         <button
           onClick={handleNext}
-          className="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] hover:bg-blue-500 text-white p-4 rounded-full shadow-lg transition-transform duration-300 hover:scale-110"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-100 hover:bg-gray-200 text-gray-800 p-3 rounded-full shadow-md hover:shadow-lg transition-transform duration-300 hover:scale-110"
         >
           ❯
         </button>
 
         {/* Indicators */}
-        <div className="flex justify-center mt-6 space-x-2">
+        <div className="flex justify-center mt-6 space-x-3">
           {testimonials.map((_, index) => (
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
               className={`w-4 h-4 rounded-full transition-all duration-300 ${
-                index === currentIndex ? "bg-blue-500 scale-125" : "bg-gray-400"
+                index === currentIndex ? "bg-indigo-600 scale-125" : "bg-gray-400"
               }`}
             ></button>
           ))}
