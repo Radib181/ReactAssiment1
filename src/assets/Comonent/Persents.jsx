@@ -3,7 +3,7 @@ import Img from "../Photos/Img.png";
 
 function Persents() {
   return (
-    <section className="relative py-12 md:py-16 mt-20 hover:shadow-lg mb-3 h-auto w-full max-w-7xl mx-auto rounded-2xl shadow-2xl">
+    <section className="relative  py-12 md:py-16 mt-20 hover:shadow-lg  h-auto w-full max-w-7xl mx-auto rounded-2xl shadow-2xl">
       {/* Reversed Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

@@ -9,6 +9,7 @@ import Slider from './assets/Comonent/Slider'
 import PerfectEmal from './assets/Comonent/PerfectEmal'
 import Persents from './assets/Comonent/Persents'
 import Footer from './assets/Comonent/Footer'
+import Footer2 from './assets/Comonent/Footer2'
 
 
 
@@ -27,6 +28,7 @@ function App() {
      <Slider></Slider>  
      <Persents></Persents>
      <Footer></Footer>
+     <Footer2></Footer2>
      
      </main>     
     

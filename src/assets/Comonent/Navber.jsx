@@ -28,7 +28,7 @@ const Navbar = () => {
 
   const drawer = (
     <Box className="text-center py-4 bg-gray-50">
-      <img src={Logo} alt="Logo" className="mx-auto w-24" />
+      <img   src={Logo} alt="Logo" className="mx-auto w-24 cursor-pointer" />
       <List className="space-y-3">
         {["About Us", "Pricing", "Customers", "Solutions"].map((item) => (
           <ListItem key={item} disablePadding>

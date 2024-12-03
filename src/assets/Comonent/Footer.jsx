@@ -4,7 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Footer = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen  text-[#e0e1dd] text-center">
+    <div className="flex -mt-10 flex-col items-center justify-center min-h-screen  text-[#e0e1dd] text-center">
       {/* Header Text */}
       <p className="text-[#80ced7] text-sm uppercase tracking-wide">Get Started</p>
       <h1 className="text-4xl font-bold mt-2">
@@ -37,10 +37,7 @@ const Footer = () => {
         Sign Up for the Beta
       </Button>
 
-      {/* Footer */}
-      <div className="mt-10 text-sm text-[#6c757d]">
-        Copyright © 2023 Wizia. All rights reserved.
-      </div>
+      
     </div>
   );
 };

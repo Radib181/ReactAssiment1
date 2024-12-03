@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 
 const testimonials = [
   {
-    text: "This product has changed the way we do business. Highly recommend!",
+    text: "Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.!",
     author: {
-      name: "John Doe",
-      title: "CEO",
+      name: " John Doe",
+      title: 'John Doe Chief Strategy Officer  Company',
       company: "TechCorp",
       avatar: "https://via.placeholder.com/100",
     },
@@ -37,7 +37,7 @@ const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 5000); // Auto-slide every 5 seconds
+    }, 10000); // Auto-slide every 5 seconds
     return () => clearInterval(interval);
   }, [currentIndex]);
 
