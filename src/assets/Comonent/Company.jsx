@@ -7,7 +7,7 @@ import Dbs from "../Photos/Dbs.png";
 
 function Company() {
   return (
-    <section className="py-12 bg-[#07292F]">
+    <section className="py-5 bg-[#07292F] hover:shadow-2xl">
       {/* Scrolling Text */}
       <div className="text-center mb-8">
         <h4 className="text-white text-2xl font-semibold animate-marquee">
