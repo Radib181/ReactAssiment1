@@ -1,7 +1,7 @@
 import React from "react";
 import Group from "../Photos/Group.png"
 import Group2 from "../Photos/Group2.png"
-
+import Vector from "../Photos/Vector.png"
 
 function IconBer() {
   const IconBer = [
@@ -18,7 +18,7 @@ function IconBer() {
         "Leverage aiDRs to automate repetitive tasks, saving time and increasing productivity.",
     },
     {
-      Icon: '',
+      Icon: Vector,
       title: "Seamless Integration",
       description:
         "aiDRs fit effortlessly into your workflow, adapting to your needs.",
