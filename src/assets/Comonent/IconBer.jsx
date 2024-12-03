@@ -1,5 +1,6 @@
 import React from "react";
 import Vector from "../Photos/Vector.png";
+import IconBer from './IconBer';
 
 function IconBer() {
   const IconBer = [
