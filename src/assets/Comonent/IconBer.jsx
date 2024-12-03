@@ -49,7 +49,7 @@ function IconBer() {
             </h3>
 
             {/* Description */}
-            <p className="text-gray-600 text-center group-hover:text-white">
+            <p className="  text-white font-extralight text-center group-hover:text-white">
               {card.description}
             </p>
           </div>
